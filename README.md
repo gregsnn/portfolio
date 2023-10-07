@@ -4,6 +4,8 @@
 
 Projeto feito no intuito de me apresentar.
 
+Você pode acessar o site clicando <a href="https://gregsnn.github.io/portfolio/">aqui</a>.
+
 ## O site é composto por:
 
 - **Home:** Minha apresentação;

@@ -63,7 +63,7 @@ function projetos(section) {
           <p>C++</p>
         </div>
         <div class="card">
-          <h3>Teste com Cypress/JEST</h3>
+          <h3>Testes com JEST/Cypress/Selenium</h3>
           <div class="img-wrapper">
             <img src="./assets/images/projects/quality-assurance.jpg" alt="Imagem do projeto." />
             <div class="buttons">

@@ -111,3 +111,32 @@ toggle.addEventListener("change", () => {
   document.body.classList.toggle("light-mode");
 });
 
+let typing = document.querySelector("#typing");
+let writer = 100;
+let waiter = 3000;
+let erase = 2900;
+
+let words = ["Analista de Qualidade de Software", "Desenvolvedor Full Stack"];
+let wordIndex = 0;
+let charIndex = 0;
+
+function eraseEffect() {
+  if (wordIndex === words.length) wordIndex = 0;
+  typing.innerHTML = '';
+}
+
+function typingEffect() {
+  if (charIndex < words[wordIndex].length) {
+    typing.innerHTML += words[wordIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(typingEffect, writer);
+  } else {
+    charIndex = 0;
+    wordIndex++;
+    setTimeout(typingEffect, waiter);
+
+    setTimeout(eraseEffect, erase);
+  }
+}
+
+typingEffect();
